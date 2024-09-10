@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <IsAspireHost>true</IsAspireHost>
+    <UserSecretsId>f6a1a575-675b-41e7-82ff-96be1e7a509b</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Aspire.Hosting.AppHost" Version="8.2.0" />
+    <ProjectReference Include="..\..\..\..\src\AWSLambda\AWSLambda.csproj" IsAspireProjectResource="false" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\FindNationalityFunction\FindNationalityFunction.csproj" IsAspireProjectResource="false" />
+    <ProjectReference Include="..\..\src\FindNationalityWeb\FindNationalityWeb.csproj" />
+  </ItemGroup>
+
+</Project>
