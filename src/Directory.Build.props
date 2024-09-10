@@ -1,0 +1,20 @@
+<Project>
+  <!-- See https://aka.ms/dotnet/msbuild/customize for more details on customizing your build -->
+  <PropertyGroup>
+    <RootNamespace>Kralizek.Aspire.Hosting</RootNamespace>
+    <LangVersion>default</LangVersion>
+    <Nullable>enable</Nullable>
+    <AssemblyName>$(RootNamespace).$(MSBuildProjectName)</AssemblyName>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <Authors>Renato Golia</Authors>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/Kralizek/aspire-extensions</PackageProjectUrl>
+  </PropertyGroup>
+
+</Project>
