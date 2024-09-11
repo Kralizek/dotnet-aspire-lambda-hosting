@@ -70,3 +70,7 @@ info: Aspire.Hosting.DistributedApplication[0]
 ```
 
 Clicking on the link, will give you the usual Aspire dashboard.
+
+## Disclaimer
+
+I used some code taken from the [Aspirant proejct](https://github.com/aspirant-project/aspirant/) repository. Hopefully in the future I can just reference it as a dependency rather than copying it ;)
