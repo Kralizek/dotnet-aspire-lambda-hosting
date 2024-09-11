@@ -44,3 +44,29 @@ builder.AddProject<Projects.FindNationalityWeb>("web")
 builder.Build().Run();
 ```
 
+## How to run the sample
+
+This repository comes with a sample.
+
+Assuming you are in the root of the repo, you can launch the sample as it follows:
+
+```bash
+$ cd ./samples/FindNationalityAnnotations/
+
+$ dotnet run --project ./tools/AppHost/
+Building...
+info: Aspire.Hosting.DistributedApplication[0]
+      Aspire version: 8.2.0+75fdcff28495bdd643f6323133a7d411df71ab70
+info: Aspire.Hosting.DistributedApplication[0]
+      Distributed application starting.
+info: Aspire.Hosting.DistributedApplication[0]
+      Application host directory is: C:\Users\rg1844\Development\My\AWSLambdaAspireHosting\samples\FindNationalityAnnotations\tools\AppHost
+info: Aspire.Hosting.DistributedApplication[0]
+      Now listening on: https://localhost:17078
+info: Aspire.Hosting.DistributedApplication[0]
+      Login to the dashboard at https://localhost:17078/login?t=0831ba5f23b9a83f435fd19ba599ee75
+info: Aspire.Hosting.DistributedApplication[0]
+      Distributed application started. Press Ctrl+C to shut down.
+```
+
+Clicking on the link, will give you the usual Aspire dashboard.
