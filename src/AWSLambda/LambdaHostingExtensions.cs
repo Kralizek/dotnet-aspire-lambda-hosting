@@ -14,7 +14,7 @@ public static class LambdaHostingExtensions
         return builder.AddWebApplication<LambdaResource, LambdaResourceLifecycleHook>(resource, excludeFromManifest: true);
     }
 
-    public static IResourceBuilder<LambdaResource> AddFunction(this IResourceBuilder<LambdaResource> builder, Type functionClass, string functionName)
+    public static IResourceBuilder<LambdaResource> AddAnnotationFunction(this IResourceBuilder<LambdaResource> builder, Type functionClass, string functionName)
     {
         if (functionClass.GetMethod(functionName) is { } method)
         {

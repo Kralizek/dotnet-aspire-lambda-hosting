@@ -5,7 +5,7 @@ var builder = DistributedApplication.CreateBuilder(args);
 var lambda = builder.AddLambdaLocalHosting("lambda")
     .WithEndpoint(scheme: "http", port: 52000);
 
-lambda.AddFunction(typeof(Functions), nameof(Functions.GetCountriesAsync));
+lambda.AddAnnotationFunction(typeof(Functions), nameof(Functions.GetCountriesAsync));
 
 builder.AddProject<Projects.FindNationalityWeb>("web")
     .WithReference(lambda)
